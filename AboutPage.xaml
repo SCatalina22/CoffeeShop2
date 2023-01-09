@@ -12,7 +12,7 @@ HeightRequest="64" />
 Lists" VerticalOptions="End" />
             <Label FontSize="22" Text="v1.0" VerticalOptions="End" />
         </HorizontalStackLayout>
-        <Label Text="Spor la cumparaturi!" />
+        <Label Text="Iti poti crea propria ta lista de cafea!" />
 
     </VerticalStackLayout>
 </ContentPage>

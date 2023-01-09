@@ -5,9 +5,11 @@
              x:Class="CoffeeShop2.ListPage"
              Title="ListPage">
     <StackLayout Margin="20">
-        <Editor Placeholder="Enter the description of the shopping list"
+        <Editor Placeholder="Descrierea listei de cumparaturi"
                 Text="{Binding Description}"
-                HeightRequest="50" >
+                HeightRequest="50" 
+                BackgroundColor="White" 
+                TextColor="Black">
             <Editor.Behaviors>
                 <local:ValidationBehaviour />
             </Editor.Behaviors>
@@ -18,10 +20,10 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Button Text="Save"
+            <Button Text="Salveaza"
                     Clicked="OnSaveButtonClicked" />
             <Button Grid.Column="1"
-                    Text="Delete"
+                    Text="Sterge"
                     Clicked="OnDeleteButtonClicked"/>
         </Grid>
         <ListView x:Name="listView"
@@ -32,7 +34,7 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button Text="Add/Choose Item to buy" 
+        <Button Text="Adauga/Alege cafeaua dorita" 
                 MaximumWidthRequest="300"
                 Clicked="OnChooseButtonClicked"/>
     </StackLayout>
